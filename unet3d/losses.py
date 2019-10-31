@@ -40,7 +40,7 @@ class DiceLoss(nn.Module):
     Additionally allows per-class weights to be provided.
     """
 
-    def __init__(self, epsilon=1e-5, weight=None, ignore_index=None, sigmoid_normalization=True,
+    def __init__(self, epsilon=1e-5, weight=None, ignore_index=None, sigmoid_normalization=False,
                  skip_last_target=False):
         super(DiceLoss, self).__init__()
         self.epsilon = epsilon
